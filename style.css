@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif, 'Berkshire Swash', cursive;
+}
+
+h1 {
+    font-size: 76px;
+    font-family: 'Berkshire Swash';
+    line-height: 94px;
+    text-transform: capitalize;
+    color: #FF5E19;
+}
+
+.banner {
+    text-align: center;
+    background-color: #000000;
+    padding: 131px 0;
+}
+
+.banner p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
