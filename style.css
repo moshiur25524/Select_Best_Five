@@ -99,3 +99,13 @@ h1 {
     background-color: #0D0D0D;
     margin-bottom: 30px;
 }
+
+.custom-input {
+    color: white;
+    width: 121px;
+    height: 42px;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    background-color:transparent;
+    margin-left: 10px
+}
