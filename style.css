@@ -14,6 +14,7 @@ body {
 
 .container {
     max-width: 1300px;
+    padding: 75px 0;
     margin: 0 auto;
 }
 
@@ -38,11 +39,10 @@ h1 {
     color: #ffffff;
 }
 
-.players{
+.players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 75px 0;
 }
 
 .player {
@@ -64,18 +64,38 @@ h1 {
     height: 204px; */
 }
 
-.player button{
+.custom-btn {
     color: white;
-    background-color: #A2A9AF;;
+    background-color: #015196;
     text-transform: uppercase;
     padding: 8px 35px;
 }
 
-.player button:hover{
-    background-color: #015196;
+.custom-btn:hover {
+    background-color: #A2A9AF;
 }
 
-.body-part{
+.body-part {
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+/* Side of Right side  */
+
+.selected {
+    width: 264px;
+    height: 371px;
+    color: white;
+    padding: 20px;
+    background-color: #0D0D0D;
+    margin-bottom: 30px;
+}
+
+.budget {
+    width: 264px;
+    height: 514px;
+    color: white;
+    padding: 20px;
+    background-color: #0D0D0D;
+    margin-bottom: 30px;
 }
