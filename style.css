@@ -59,8 +59,9 @@ h1 {
 }
 
 .player img {
-    width: 264px;
-    height: 204px;
+    width: 100%;
+    /* width: 264px;
+    height: 204px; */
 }
 
 .player button{
@@ -68,4 +69,13 @@ h1 {
     background-color: #A2A9AF;;
     text-transform: uppercase;
     padding: 8px 35px;
+}
+
+.player button:hover{
+    background-color: #015196;
+}
+
+.body-part{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
