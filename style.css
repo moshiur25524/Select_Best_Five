@@ -29,6 +29,7 @@ h1 {
 .banner {
     text-align: center;
     background-color: #000000;
+    height: 80vh;
     padding: 131px 0;
 }
 

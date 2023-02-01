@@ -1,25 +1,18 @@
 
-function getValueFromInputField(inputId){
-    const inputField = document.getElementById(inputId);
-    const inputValue = inputField.value;
-    inputField.value = ''
-    return inputValue;
-}
 
-// function getValueFromTextField(inputId){
-//     const textField = document.getElementById(inputId);
-//     const textValue = textField.innerText;
-//     return textValue;
-// }
+document.getElementById('per-player-btn').addEventListener('click', function () {
+    const perPlayerCost = getValueFromInputField('per-player-input-field')
 
-function setValueToTextField(inputId, currentValue){
-    const textField = document.getElementById(inputId);
-    textField.innerText = currentValue
-}
-
-document.getElementById('per-player-btn').addEventListener('click', function(){
-   const perPlayerCost = getValueFromInputField('per-player-input-field')
-
-   ExpencesCost = perPlayerCost * 5;
+    ExpencesCost = perPlayerCost * 5;
     setValueToTextField('player-expences', ExpencesCost)
+    return ExpencesCost
+})
+
+document.getElementById('calculate-total-btn').addEventListener('click', function () {
+    const managerCost = getValueFromInputField('manager-field');
+    const coachCost = getValueFromInputField('coach-field')
+    const totalCost = managerCost + coachCost + ExpencesCost;
+
+    setValueToTextField('display-total', totalCost)
+    console.log(totalCost);
 })

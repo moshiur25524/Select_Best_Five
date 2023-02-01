@@ -113,18 +113,18 @@
                             <input id="per-player-input-field" class="custom-input" type="text">
                         </div>
                         <button id="per-player-btn" class="custom-btn">calculate</button>
-                        <p class="my-5">Player Expences: $<span id="player-expences">00</span></p>
+                        <p class="my-5">Player Expences: $ <span id="player-expences">00</span></p>
                         <div class="my-2">
                             <span>Manager</span>
-                            <input class="custom-input" type="text">
+                            <input id="manager-field" class="custom-input" type="text">
                         </div>
                         <div class="my-2">
                             <span>Coach</span>
-                            <input class="custom-input" type="text">
+                            <input id="coach-field" class="custom-input" type="text">
                         </div>
-                        <button class="custom-btn">calculate total</button>
+                        <button id="calculate-total-btn" class="custom-btn">calculate total</button>
                         <div>
-                            <p>Total <span style="color: #FF5E19;">$ 5000</span></p>
+                            <p>Total $ <span id="display-total" style="color: #FF5E19; margin-left: 10px;">00</span></p>
                         </div>
                     </div>
                 </div>
@@ -132,6 +132,7 @@
         </section>
     </main>
 
+    <script src="/common.js"></script>
     <script src="/app.js"></script>
 </body>
 
