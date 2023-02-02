@@ -4,7 +4,13 @@ document.getElementById('per-player-btn').addEventListener('click', function () 
     const perPlayerCost = getValueFromInputField('per-player-input-field')
 
     ExpencesCost = perPlayerCost * 5;
-    setValueToTextField('player-expences', ExpencesCost)
+    if (isNaN(ExpencesCost)) {
+        alert('Insert Number Please !!')
+        return
+    }
+    else {
+        setValueToTextField('player-expences', ExpencesCost)
+    }
     return ExpencesCost
 })
 
@@ -13,8 +19,14 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const coachCost = getValueFromInputField('coach-field')
     const totalCost = managerCost + coachCost + ExpencesCost;
 
-    setValueToTextField('display-total', totalCost)
-    console.log(totalCost);
+    if (isNaN(totalCost)) {
+        alert('Insert Number Please !!')
+        return
+    }
+    else {
+        setValueToTextField('display-total', totalCost)
+    }
+
 })
 
 const players = document.querySelectorAll('.player');
