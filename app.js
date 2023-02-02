@@ -19,27 +19,24 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
 const players = document.querySelectorAll('.player');
 
-for(let player of players){
 
-  const playerButton = player.childNodes[7];
-  const unorderedList = document.getElementById('unordered-list');
-  const li = document.createElement('li')
+for (let player of players) {
 
-  playerButton.addEventListener('click', function(){
-    const playerName = player.childNodes[3].innerText;
-    li.innerText = playerName
-    unorderedList.appendChild(li)
-    console.log(playerName);
-  })
+    const playerButton = player.childNodes[7];
+    const unorderedList = document.getElementById('unordered-list');
+
+    const li = document.createElement('li')
+
+    playerButton.addEventListener('click', function () {
+        const playerName = player.childNodes[3].innerText;
+        li.innerText = playerName
+        const playerNumber = unorderedList.childNodes.length
+        if (playerNumber > 5) {
+            alert('Sorry !! You have selected enough Players')
+            return
+        }
+
+        unorderedList.appendChild(li)
+
+    })
 }
-
-// for (let btn of playerBtns) {
-//     btn.addEventListener('click', function(){
-//         const selectedButton = bt
-//     })
-// console.log(btn);
-// }
-
-// for(let player of players){
-//   console.log(player.childNodes);child
-// }
